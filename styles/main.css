@@ -16,6 +16,11 @@ body {
   width: 80%;
   max-width: 350px;
   margin: 5rem auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'card-1' 'card-2' 'card-3' 'card-4' 'card-5';
 }
 
 .container .testimonial {
@@ -67,5 +72,45 @@ body {
 .container .testimonial__review {
   line-height: 1.5;
   opacity: 0.7;
+}
+
+.container .card-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card-1;
+  color: white;
+  background: #7541c8;
+}
+
+.container .card-2 {
+  background: #48556a;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card-2;
+  color: white;
+}
+
+.container .card-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: card-3;
+  -webkit-box-shadow: 50px 60px 35px -50px rgba(0, 0, 0, 0.14);
+          box-shadow: 50px 60px 35px -50px rgba(0, 0, 0, 0.14);
+}
+
+.container .card-4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: card-5;
+  -webkit-box-shadow: 50px 60px 35px -50px rgba(0, 0, 0, 0.14);
+          box-shadow: 50px 60px 35px -50px rgba(0, 0, 0, 0.14);
+}
+
+.container .card-5 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: card-4;
+  background: #19212e;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
