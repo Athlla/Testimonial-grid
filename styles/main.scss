@@ -8,7 +8,7 @@ $light-gray: hsl(0, 0%, 81%);
 $light-grayish-blue: hsl(210, 46%, 95%);
 
 @mixin desktop {
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     @content;
   }
 }
@@ -37,7 +37,7 @@ body {
   }
 
   .grid-container {
-    width: 80%;
+    width: 100%;
     max-width: 350px;
     margin-top: 5rem;
     display: grid;
@@ -135,8 +135,13 @@ body {
   .attribution {
     margin: 2.5rem 0;
 
-    // @include desktop {
-    //   margin: 0;
-    // }
+    @include desktop {
+      margin: 0;
+    }
+
+    a {
+      color: $moderate-violet;
+      text-decoration: none;
+    }
   }
 }
